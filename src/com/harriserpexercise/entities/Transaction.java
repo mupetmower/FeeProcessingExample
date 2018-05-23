@@ -1,5 +1,10 @@
 package com.harriserpexercise.entities;
 
+/**
+ * 
+ * @author Alex Frye
+ *
+ */
 public class Transaction {
 	
 	private float amount;
@@ -12,7 +17,8 @@ public class Transaction {
 	public Transaction() {}
 	
 	public Transaction(float amount) {
-		this.amount = amount;
+		if (amount > 0)
+			this.amount = amount;
 	}
 	
 	public Transaction(Fee fee, Payment payment) {
@@ -21,6 +27,20 @@ public class Transaction {
 		
 		DetermineTransactionAmount();
 	}
+	
+	/**
+	 * For last Transactions to create when there are excess payments
+	 * @param fee
+	 * @param payment
+	 * @param amount - overridden amount for new transaction
+	 */
+	public Transaction(Fee fee, Payment payment, float amount) {
+		this.fee = fee;
+		this.payment = payment;		
+		this.amount = amount;
+	}
+	
+	
 	
 	public void DetermineTransactionAmount() {
 		if (payment.getAmount() <= fee.getAmount()) {
@@ -32,7 +52,8 @@ public class Transaction {
 	}
 	
 	/**
-	**Deduct Payment from Fee. If payment has money left, return true
+	* Deducts Payment from Fee.
+	* @return If payment has money left, return true.
 	**/
 	public boolean PerformTransaction() {
 		DeductPayment();		
@@ -50,7 +71,8 @@ public class Transaction {
 		return amount;
 	}
 	public void setAmount(float amount) {
-		this.amount = amount;
+		if (amount > 0)
+			this.amount = amount;
 	}
 
 	public Fee getFee() {

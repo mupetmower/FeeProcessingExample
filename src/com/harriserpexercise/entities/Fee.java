@@ -1,5 +1,10 @@
 package com.harriserpexercise.entities;
 
+/**
+ * 
+ * @author Alex Frye
+ *
+ */
 public class Fee {
 	
 	private String name;	
@@ -10,12 +15,18 @@ public class Fee {
 	
 	public Fee(String name, float amount) {		
 		this.name = name;
-		this.amount = amount;
+		if (amount > 0)
+			this.amount = amount;
 	}
 	
 	
 	public void DeductPayment(float paymentAmount) {
-		amount -= paymentAmount;		
+		if (paymentAmount <= amount)
+			amount -= paymentAmount;		
+	}
+		
+	public void ExcessPayment(float paymentAmount) {
+		amount -= paymentAmount;
 	}
 	
 	
@@ -30,7 +41,8 @@ public class Fee {
 		return amount;
 	}
 	public void setAmount(float amount) {
-		this.amount = amount;
+		if (amount > 0)
+			this.amount = amount;
 	}
 
 }
