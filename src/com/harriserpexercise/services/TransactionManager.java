@@ -5,12 +5,14 @@ import java.util.Queue;
 
 import com.harriserpexercise.entities.Fee;
 import com.harriserpexercise.entities.Payment;
+import com.harriserpexercise.entities.Transaction;
 
 
 public class TransactionManager {
 	
 	private Queue allFees = new LinkedList<Fee>();
 	private Queue allPayments = new LinkedList<Payment>();
+	private Queue allTransactions = new LinkedList<Transaction>();
 	
 	
 	public TransactionManager() {
@@ -22,7 +24,11 @@ public class TransactionManager {
 		
 	}
 	
-	
+	public Transaction CreateTransaction(Fee fee, Payment payment) {
+		Transaction transaction = new Transaction(fee, payment);
+		
+		return null;		
+	}
 	
 	
 	
@@ -50,4 +56,17 @@ public class TransactionManager {
 		}
 	}
 
+	public Queue getAllTransactions() {
+		return allTransactions;
+	}
+	public void setAllTransactions(Queue allTransactions) {
+		this.allTransactions = allTransactions;
+	}
+	public void addToAllTransactions(Transaction ... transactions) {
+		for (Transaction transaction : transactions) {
+			allTransactions.add(transaction);
+		}
+	}
+	
+	
 }

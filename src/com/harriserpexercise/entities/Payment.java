@@ -10,6 +10,11 @@ public class Payment {
 	public Payment(float amount) {
 		this.amount = amount;
 	}
+	
+	
+	public void UsePayment(float amountToUse) {
+		amount -= amountToUse;
+	}
 
 	
 	public float getAmount() {

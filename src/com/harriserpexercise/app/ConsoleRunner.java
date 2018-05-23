@@ -2,7 +2,7 @@ package com.harriserpexercise.app;
 
 import java.util.Scanner;
 
-import com.harriserpexercise.util.Numbers;
+import com.harriserpexercise.util.NumberParser;
 
 public class ConsoleRunner {
 	
@@ -40,7 +40,7 @@ public class ConsoleRunner {
 						throw new Exception("q has been entered. Quitting Application.");
 					}
 					//Parse to integer, check to make sure it is positive
-					numFees = Numbers.ParsePositiveInt(strNumFees);
+					numFees = NumberParser.ParsePositiveInt(strNumFees);
 				} catch (Exception ex) {
 					System.out.println("Error - " + ex.getMessage() + "\n");
 				}				

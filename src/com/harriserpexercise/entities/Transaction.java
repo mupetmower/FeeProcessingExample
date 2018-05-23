@@ -7,6 +7,7 @@ public class Transaction {
 	private Fee fee;
 	private Payment payment;
 	
+	boolean paymentLeft = false;
 	
 	public Transaction() {}
 	
@@ -17,6 +18,31 @@ public class Transaction {
 	public Transaction(Fee fee, Payment payment) {
 		this.fee = fee;
 		this.payment = payment;
+		
+		DetermineTransactionAmount();
+	}
+	
+	public void DetermineTransactionAmount() {
+		if (payment.getAmount() <= fee.getAmount()) {
+			amount = payment.getAmount();
+		} else {
+			amount = fee.getAmount();
+			paymentLeft = true;
+		}
+	}
+	
+	/**
+	**Deduct Payment from Fee. If payment has money left, return true
+	**/
+	public boolean PerformTransaction() {
+		DeductPayment();		
+		
+		return paymentLeft;
+	}
+	
+	public void DeductPayment() {
+		fee.DeductPayment(amount);
+		payment.UsePayment(amount);
 	}
 	
 	

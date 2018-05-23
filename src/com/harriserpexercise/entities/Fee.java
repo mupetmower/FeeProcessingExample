@@ -14,6 +14,11 @@ public class Fee {
 	}
 	
 	
+	public void DeductPayment(float paymentAmount) {
+		amount -= paymentAmount;		
+	}
+	
+	
 	public String getName() {
 		return name;
 	}
