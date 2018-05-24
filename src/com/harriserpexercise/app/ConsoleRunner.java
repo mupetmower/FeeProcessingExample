@@ -2,13 +2,16 @@ package com.harriserpexercise.app;
 
 import java.util.Scanner;
 
-import com.harriserpexercise.entities.Fee;
-import com.harriserpexercise.entities.Payment;
 import com.harriserpexercise.entities.Transaction;
 import com.harriserpexercise.services.TransactionManager;
 import com.harriserpexercise.util.InputParser;
 
 /**
+ * A Console Runner for the Fee Processor Program
+ * <br>
+ * ConsoleRunner starts the program in the console. On instantiation, it will prompt for user input,
+ * consume the input using the TransactionManager to create Fees and Payments, create and 
+ * process Transactions, and display the results.
  * 
  * @author Alex Frye
  *
@@ -41,9 +44,9 @@ public class ConsoleRunner {
 		if (numPayments > 0)
 			PromptForPayments(numPayments);
 		
-		CreateTransactions();
 		
-		
+		CreateAndProcessTransactions();
+				
 	}
 	
 	
@@ -230,7 +233,7 @@ public class ConsoleRunner {
 				} else {								
 					try {												
 						
-						System.out.print(String.format("Enter the amount for Payment: %d", i+1));
+						System.out.print(String.format("Enter the amount for Payment %d: ", i+1));
 						String strPaymentAmount = input.nextLine();
 						if (InputParser.CheckQuit(strPaymentAmount)) {
 							quitFlag = true;
@@ -263,13 +266,19 @@ public class ConsoleRunner {
 		}
 	}	
 	
-	public void CreateTransactions() {
+	/**
+	 * Call TransactionManager's CreateAndProcessTransaction method which will create, process, and display
+	 * each transaction.
+	 */
+	public void CreateAndProcessTransactions() {
+		System.out.println("All Fees and Payments entered.\n"
+				+ "Creating Transactions...");
+		
+		transactionMngr.CreateAndProcessTransactions();
+		
 		
 	}
 	
-	public void ProccessTransactions(Transaction transaction) {
-		
-	}
 	
 	/**
 	 * Make sure the user wants to quit

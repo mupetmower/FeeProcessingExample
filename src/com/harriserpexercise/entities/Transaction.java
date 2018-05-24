@@ -29,7 +29,7 @@ public class Transaction {
 	}
 	
 	/**
-	 * For last Transactions to create when there are excess payments
+	 * Overloaded constructor for creating the last Transactions when there are excess payments
 	 * @param fee
 	 * @param payment
 	 * @param amount - overridden amount for new transaction
@@ -61,11 +61,26 @@ public class Transaction {
 		return paymentLeft;
 	}
 	
-	public void DeductPayment() {
+	/**
+	* Deducts Excess Payment from Fee.
+	* @return If payment has money left, return true.
+	**/
+	public boolean PerformExcessTransaction() {
+		DeductExcessPayment();		
+		
+		return paymentLeft;
+	}
+	
+	
+	private void DeductPayment() {
 		fee.DeductPayment(amount);
 		payment.UsePayment(amount);
 	}
 	
+	private void DeductExcessPayment() {
+		fee.ExcessPayment(amount);
+		payment.UsePayment(amount);
+	}
 	
 	public float getAmount() {
 		return amount;

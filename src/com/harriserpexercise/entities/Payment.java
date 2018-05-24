@@ -22,6 +22,11 @@ public class Payment {
 		if (amountToUse <= amount)			
 			amount -= amountToUse;
 	}
+	
+	
+	public Payment Clone() {
+		return new Payment(this.amount);
+	}
 
 	
 	public float getAmount() {

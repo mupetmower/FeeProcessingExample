@@ -30,6 +30,11 @@ public class Fee {
 	}
 	
 	
+	public Fee Clone() {
+		return new Fee(this.name, this.amount);
+	}
+	
+	
 	public String getName() {
 		return name;
 	}
@@ -41,7 +46,7 @@ public class Fee {
 		return amount;
 	}
 	public void setAmount(float amount) {
-		if (amount > 0)
+		if (amount >= 0)
 			this.amount = amount;
 	}
 
