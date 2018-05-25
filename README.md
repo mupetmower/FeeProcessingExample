@@ -1,5 +1,8 @@
 # HarrisERPExercise - Fee Processor
 
+This document is refering to the HarrisERP folder which contains this project.
+
+
 This program is located in **HarrisERP\Project** and is a .zip file. Fee Processor was created in Eclipse in a Java 8 environment. Since I used some stream functionality and some lambdas, Java 8 is required to run this program. The stream API and lambda support is not in Java 7 and lower.
 
 # NOTES
