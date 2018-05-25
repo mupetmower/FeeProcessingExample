@@ -6,7 +6,7 @@ This document is refering to the HarrisERP folder which contains this project.
 
 This program is located in **HarrisERP\Project** and is a .zip file. Fee Processor was created in Eclipse in a Java 8 environment. Since I used some stream functionality and some lambdas, Java 8 is required to run this program. The stream API and lambda support is not in Java 7 and lower.
 
-To see the coce, simply unzip the file in **HarrisERP\Project** and navigate to **HarrisERPExercise\src\com\harriserpexercise**. Each of the packages located there contain different parts of the projects code. **\app** contains the Main.java file which runs the project, and also the ConsoleRunner.java file which does all of the console displaying. **\services** contains the project's main service class, TransactionManager. This does most of the project's logic. **\entities** is where the Fee, Payment, and Transaction classes reside. Finally, **\util** just contains a class I used for some utility methods.
+To see the code, simply unzip the file in **HarrisERP\Project** and navigate to **HarrisERPExercise\src\com\harriserpexercise**. Each of the packages located there contain different parts of the projects code. **\app** contains the Main.java file which runs the project, and also the ConsoleRunner.java file which does all of the console displaying. **\services** contains the project's main service class, TransactionManager. This does most of the project's logic. **\entities** is where the Fee, Payment, and Transaction classes reside. Finally, **\util** just contains a class I used for some utility methods.
 
 # NOTES
 
