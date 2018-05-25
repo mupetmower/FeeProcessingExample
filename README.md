@@ -1,5 +1,5 @@
 
-This document is refering to the HarrisERP folder which contains this project.
+This document sometimes refers to the HarrisERP repository folder which contains this project.
 
 
 # HarrisERPExercise - Fee Processor
