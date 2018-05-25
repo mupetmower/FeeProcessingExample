@@ -1,10 +1,10 @@
 # HarrisERPExercise - Fee Processor
 
-This program was created in Eclipse in a Java 8 environment. Since I used some stream functionality and some lambdas, Java 8 is required to run this program. The stream API and lambda support is not in Java 7 and lower.
+This program is located in **HarrisERP\Project\** and is a .zip file**. Fee Processor was created in Eclipse in a Java 8 environment. Since I used some stream functionality and some lambdas, Java 8 is required to run this program. The stream API and lambda support is not in Java 7 and lower.
 
 # NOTES
 
-In the folder this was downloaded with, There should be folders named JavaWindows, JavaMac, JavaLinux. These are where copies of the Java 8 jre reside. I have included these so that it is not necessary for the user to install anything. If you would like to install Java 8 on your machine anyway, please continue to section titled **How to Check Java Version**. Otherwise, continue to the section titled **How to Run with Embedded JRE**.
+In the main folder called **HarrisERP**, there should be folders named JavaWindows, JavaMac, JavaLinux. These are where copies of the Java 8 jre reside. I have included these so that it is not necessary for the user to install anything. If you would like to install Java 8 on your machine anyway, please continue to section titled **How to Check Java Version**. Otherwise, continue to the section titled **How to Run with Embedded JRE**.
 
 # How to Run with Embedded JRE
 
