@@ -6,11 +6,15 @@ This document is refering to the HarrisERP folder which contains this project.
 
 This program is located in **HarrisERP\Project** and is a .zip file. Fee Processor was created in Eclipse in a Java 8 environment. Since I used some stream functionality and some lambdas, Java 8 is required to run this program. The stream API and lambda support is not in Java 7 and lower.
 
-To see the coce, simply unzip the file at **HarrisERP\Project\HarrisERPExercise.zip** and navigate to **HarrisERPExercise\src\com\harriserpexercise**. Each of the packages located there contain different parts of the projects code. **\app** contains the Main.java file which runs the project, and also the ConsoleRunner.java file which does all of the console displaying. **\services** contains the project's main service class, TransactionManager. This does most of the project's logic. **\entities** is where the Fee, Payment, and Transaction classes reside. Finally, **\util** just contains a class I used for some utility methods.
+To see the code, simply unzip the file at **HarrisERP\Project\HarrisERPExercise.zip** and navigate to **HarrisERPExercise\src\com\harriserpexercise**. Each of the packages located there contain different parts of the projects code. **\app** contains the Main.java file which runs the project, and also the ConsoleRunner.java file which does all of the console displaying. **\services** contains the project's main service class, TransactionManager. This does most of the project's logic. **\entities** is where the Fee, Payment, and Transaction classes reside. Finally, **\util** just contains a class I used for some utility methods.
 
 # NOTES
 
 In this folder, there should be folders named JavaWindows and JavaMac. These are where copies of the Java 8 jre reside. I have included these so that it is not necessary for the user to install anything. If you would like to install Java 8 on your machine anyway, please continue to section titled **How to Check Java Version**. Otherwise, continue to the section titled **How to Run with Embedded JRE**.
+
+# NOTE - When Running
+
+When the program starts up, and you are prompted to begin, maximize your console/terminal window. This is not 100% necessary, however if this is not done, the table that display the data at the end will not appear to be aligned, and certain columnswill show on the wrong lines. Sorry for the inconvenience. 
 
 # How to Run with Embedded JRE
 
@@ -63,4 +67,3 @@ Windows - in the command line, navigate to the **HarrisERP** folder. If your env
 Mac - Running the program in Mac's terminal is the exact same as on Windows, except the paths would be different. If Java 8 is installed, you should be able to just use **java -jar** command, and do not have to use the whole absolute path.
 
 Linux - Running the program in a Linux terminal is the exact same as on Windows, except the paths would be different. If Java 8 is installed, you should be able to just use **java -jar** command, and do not have to use the whole absolute path.
-
