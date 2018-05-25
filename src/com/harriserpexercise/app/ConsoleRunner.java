@@ -2,7 +2,6 @@ package com.harriserpexercise.app;
 
 import java.util.Scanner;
 
-import com.harriserpexercise.entities.Transaction;
 import com.harriserpexercise.services.TransactionManager;
 import com.harriserpexercise.util.InputParser;
 
