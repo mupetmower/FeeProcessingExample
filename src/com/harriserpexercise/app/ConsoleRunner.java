@@ -45,6 +45,10 @@ public class ConsoleRunner {
 		
 		
 		CreateAndProcessTransactions();
+		
+		//Run one last prompt so the application will not exit before letting user
+		//see displayed results
+		PromptQuit();
 				
 	}
 	
@@ -276,6 +280,13 @@ public class ConsoleRunner {
 		transactionMngr.CreateAndProcessTransactions();
 		
 		
+	}
+	
+	
+	public void PromptQuit() {
+		System.out.print("\nAll Transactions Processed.\n\n"
+				+ "Enter any key to quit program: ");
+		input.nextLine();
 	}
 	
 	
