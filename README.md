@@ -14,9 +14,13 @@ In the main folder you have downloaded called **HarrisERP** there should be file
 # How to Check Java Version
 
 If you are unsure whether you already have Java installed on your machine, please refer to:
+
 Windows - **java -version**
+
 Mac - open terminal and type **java -version**
+
 Linux - 
+
 
 If you java version says something like **java version "1.8.0_###"** then you already have Java 8 installed and can continue to **How to Run in Command Line**
 
@@ -25,9 +29,13 @@ If you java version says something like **java version "1.8.0_###"** then you al
 To install Java 8, please head to https://java.com/en/download/manual.jsp. Choose which operating system you are using (Windows/Mac/Linux). There are also intallation instructions provided to the side of the operating system download choice. 
 
 For instructions:
-Windows - https://java.com/en/download/help/windows_manual_download.xml.
-Mac - https://java.com/en/download/help/mac_install.xml.
-Linux - https://java.com/en/download/help/linux_install.xml. 
+
+Windows - https://java.com/en/download/help/windows_manual_download.xml
+
+Mac - https://java.com/en/download/help/mac_install.xml
+
+Linux - https://java.com/en/download/help/linux_install.xml 
+
 
 If these do not cover your operating system, there are more helpful links on the Java website.
 
