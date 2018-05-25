@@ -54,7 +54,8 @@ public class ConsoleRunner {
 	
 	
 	private boolean PromptForBegin() {
-		System.out.print("Welcome to Fee Proccessor. Enter q to quit at any time. Enter any key to begin: ");
+		System.out.print("\nWelcome to Fee Processor\n"
+				+ "Enter q to quit at any time. Enter any key to begin: ");
 		String strBegin = input.nextLine();
 		
 		if (InputParser.CheckQuit(strBegin)) {
