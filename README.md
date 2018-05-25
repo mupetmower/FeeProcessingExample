@@ -7,13 +7,16 @@ This program is located in **HarrisERP\Project** and is a .zip file. Fee Process
 
 # NOTES
 
-In the main folder called **HarrisERP**, there should be folders named JavaWindows, JavaMac, JavaLinux. These are where copies of the Java 8 jre reside. I have included these so that it is not necessary for the user to install anything. If you would like to install Java 8 on your machine anyway, please continue to section titled **How to Check Java Version**. Otherwise, continue to the section titled **How to Run with Embedded JRE**.
+In the main folder called **HarrisERP**, there should be folders named JavaWindows and JavaMac. These are where copies of the Java 8 jre reside. I have included these so that it is not necessary for the user to install anything. If you would like to install Java 8 on your machine anyway, please continue to section titled **How to Check Java Version**. Otherwise, continue to the section titled **How to Run with Embedded JRE**.
 
 # How to Run with Embedded JRE
 
 **!!!NOTE FOR MAC!!! - Mac Users, please download this entire folder onto your Desktop. For the RunOnMac.command file to work and use the embedded jre, I had to choose a location for the file to look for the jre because when you run a .command, .sh, or .bash file on Mac, it automatically starts running from the machine's home directory. Since I had to choose a location relative to the home directory, I went ahead and told it to look on the Desktop. So please install this folder onto your desktop. The directory structure should be /Desktop/HarrisERP/ and HarrisERP should contain Project, RunnableJar, JavaMac, etc. Sorry for the inconvenience.**
 
-In the main folder you have downloaded called **HarrisERP** there should be files named **RunOnWindows**, **RunOnMac**, and **RunOnLinux**. Simply double-click the file that correcsponds to your operating system, or right-click and choose Open. This should bring up your terminal/console and you should see a command followed by **Welcom to Fee Processor**. You are no running the program and can follow on-screen instructions.
+In the main folder you have downloaded called **HarrisERP** there should be files named **RunOnWindows** and **RunOnMac**. Simply double-click the file that correcsponds to your operating system, or right-click and choose Open. This should bring up your terminal/console and you should see a command followed by **Welcom to Fee Processor**. You are no running the program and can follow on-screen instructions.
+
+Unfortunately, if you are using Linux, you will need to download Java 8 and use it to run this program. Luckily, it is not very hard. Continue to section **How to Install Java 8**.
+
 
 # How to Check Java Version
 
@@ -23,10 +26,11 @@ Windows - open command prompt and type **java -version**
 
 Mac - open terminal and type **java -version**
 
-Linux - 
+Linux - open terminal and type **java -version**
 
 
 If you java version says something like **java version "1.8.0_###"** then you already have Java 8 installed and can continue to **How to Run in Command Line**. If you instead see **java version "1.7.0_###"**, another number, or an error saying it could not find the java command, then you do not have java 8 installed. Please refer back to section **How to Run with Embedded JRE** or continue to **How to Install Java 8**.
+
 
 # How to Install Java 8
 
@@ -38,7 +42,7 @@ Windows - https://java.com/en/download/help/windows_manual_download.xml
 
 Mac - https://java.com/en/download/help/mac_install.xml
 
-Linux - https://java.com/en/download/help/linux_install.xml 
+Linux - https://java.com/en/download/help/linux_install.xml     For linux, you can also usually run **sudo apt install openjdk-8-jre-headless** and followthe instructions on screen. It should install Java 8 for you.
 
 
 If these do not cover your operating system, there are more helpful links on the Java website.
