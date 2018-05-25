@@ -8,6 +8,8 @@ In the main folder called **HarrisERP**, there should be folders named JavaWindo
 
 # How to Run with Embedded JRE
 
+**!!!NOTE FOR MAC!!! - Mac Users, please download this entire folder onto your Desktop. For the RunOnMac.command file to work and use the embedded jre, I had to choose a location for the file to look for the jre because when you run a .command, .sh, or .bash file on Mac, it automatically starts running from the machine's home directory. Since I had to choose a location relative to the home directory, I went ahead and told it to look on the Desktop. So please install this folder onto your desktop. The directory structure should be /Desktop/HarrisERP/ and HarrisERP should contain Project, RunnableJar, JavaMac, etc. Sorry for the inconvenience.**
+
 In the main folder you have downloaded called **HarrisERP** there should be files named **RunOnWindows**, **RunOnMac**, and **RunOnLinux**. Simply double-click the file that correcsponds to your operating system, or right-click and choose Open. This should bring up your terminal/console and you should see a command followed by **Welcom to Fee Processor**. You are no running the program and can follow on-screen instructions.
 
 # How to Check Java Version
